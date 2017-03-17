@@ -1,0 +1,2 @@
+class Darling < ApplicationRecord
+end
