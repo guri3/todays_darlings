@@ -1,1 +1,3 @@
-hello world
+<% @darlings.each do |darling| %>
+  <h2><%= link_to darling.post_date.to_s, darling %></h2>
+<% end %>

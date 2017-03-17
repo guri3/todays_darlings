@@ -4,6 +4,7 @@ class DarlingsController < ApplicationController
   end
 
   def show
+    @darling = Darling.find(params[:id])
   end
 
   def create
