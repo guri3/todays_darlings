@@ -37,6 +37,7 @@ group :development, :test do
   gem 'awesome_print'
   gem 'hirb'
   gem 'hirb-unicode'
+  gem 'annotate'
 end
 
 group :development do
