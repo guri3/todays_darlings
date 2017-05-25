@@ -9,6 +9,13 @@
   </head>
 
   <body>
+    <header>
+      <nav class="navbar navbar-inverse bg-primary navbar-fixed-top">
+        <div class="collapse navbar-collapse" id="navbarText">
+          <%= link_to '今日のダーリンアーカイブ', root_path, class: 'navbar-brand'%>
+        </div>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
