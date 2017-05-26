@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background: #F5F5F5;
+  padding-top: 50px;
+}
+
+.navbar-collapse {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.darling-list {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 40px;
+}
