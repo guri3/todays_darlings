@@ -1,6 +1,6 @@
 class DarlingsController < ApplicationController
   def index
-    @darlings = Darling.all.order("post_date DESC")
+    @darlings = Darling.page(params[:page]).order("post_date DESC").per(15)
   end
 
   def show

@@ -8,5 +8,5 @@
 
 # ダーリンサンプル
 (1..100).each do |i|
-  Daring.create(content: "sample#{i}", post_date: Time.now)
+  Darling.create(content: "sample#{i}", post_date: Time.now + i.day)
 end
