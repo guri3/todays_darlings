@@ -1,7 +1,15 @@
 <div class="list-group darling-list">
   <% @darlings.each do |darling| %>
     <% title = "#{darling.post_date.to_s} #{darling.content.match(/(.*)\n/)[1].gsub(/・/, '').gsub(/。/, '')}..." %>
-    <%= link_to title, darling, { class: 'list-group-item list-group-item-action' } %>
+    <%= link_to darling, { class: 'list-group-item list-group-item-action' } do %>
+      <% if darling.post_date > Time.now - 3.day %>
+        <span class="label label-warning">NEW</span>
+      <% end %>
+      <% unless darling.readed %>
+        <span class="label label-danger">UNREAD</span>
+      <% end %>
+      <%= title %>
+    <% end %>
   <% end %>
   <%= paginate @darlings %>
 </div>

@@ -5,6 +5,8 @@ class DarlingsController < ApplicationController
 
   def show
     @darling = Darling.find(params[:id])
+    @darling.readed = true unless @darling.readed
+    @darling.save!
   end
 
   def create
