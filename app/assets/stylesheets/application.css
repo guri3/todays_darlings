@@ -29,3 +29,13 @@ body {
   margin: auto;
   margin-top: 40px;
 }
+
+.darling-content {
+  max-width: 800px;
+  background: white;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  padding-left: 40px;
+  font-size: 120%;
+}

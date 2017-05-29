@@ -1,6 +1,7 @@
 <div class="list-group darling-list">
   <% @darlings.each do |darling| %>
-    <%= link_to darling.post_date.to_s, darling, { class: 'list-group-item list-group-item-action' } %>
+    <% title = "#{darling.post_date.to_s} #{darling.content.match(/(.*)\n/)[1].gsub(/・/, '').gsub(/。/, '')}..." %>
+    <%= link_to title, darling, { class: 'list-group-item list-group-item-action' } %>
   <% end %>
   <%= paginate @darlings %>
 </div>
