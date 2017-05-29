@@ -21,4 +21,7 @@
 .byebug_history
 
 # Ignore gem
-vendor/bundle
+/vendor/bundle
+
+# Ignore doc
+/doc/*
