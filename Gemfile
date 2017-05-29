@@ -19,11 +19,13 @@ gem 'redis', '~> 3.0'
 gem 'annotate'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'capistrano-rails', group: :development
-
 # Bootstrap
 gem 'therubyracer'
-gem 'less-rails'
+# gem 'less-rails'
+gem 'less-rails', git: 'https://github.com/MustafaZain/less-rails'
 gem 'twitter-bootstrap-rails'
+# pagenation
+gem 'kaminari'
 
 # scrap
 gem 'nokogiri'

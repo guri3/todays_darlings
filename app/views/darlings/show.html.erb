@@ -1,1 +1,6 @@
-<%= simple_format(@darling.content) %>
+<div class="darling-content">
+  <%= simple_format(@darling.content) %>
+  <div class="back-button">
+    <%= link_to "戻る", :back, { class: 'btn btn-info', style: 'width: 100px;' }%>
+  </div>
+</div>
